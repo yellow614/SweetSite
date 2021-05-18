@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+
+header {
+  background: rgb(238, 196, 238);
+  text-align: center;
+  padding-top: 64px;
+}
+
+header h1 {
+  font-weight: normal;
+  color: firebrick;
+  /* font-size: 20px; */
+}
+
+header p {
+  color: #000000;
+  font-size: 20px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+header img {
+  width: 360px;
+  vertical-align: bottom;
+}
+
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: darkorange;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.type img {
+  width: 100%;
+}
+
+.type > h1 {
+  text-align: center;
+  padding: 32px 0;
+  font-weight: normal;
+}
+
+.type .container {
+  margin: 0 32px;
+}
+
+/* .type h1 {
+  font-weight: normal;
+} */
+
+.type p {
+  line-height: 1.8;
+}
+
+.type section {
+  padding-bottom: 64px;
+}
+
+.members {
+  background: cornsilk;
+}
+
+.members > h1 {
+  text-align: center;
+  padding: 64px;
+  font-weight: normal;
+}
+
+.members ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.members img {
+  width: 240px;
+  border-radius: 40px;
+}
+
+.members h2 {
+  font-size: 20px;
+}
+
+.members li {
+  padding-bottom: 64px;
+}
+
+.call-to-action {
+  background: rgb(238, 196, 238);
+  color: #fff;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.call-to-action h1 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.call-to-action .btn {
+  margin: 0 auto;
+}
+
+footer {
+  padding: 48px 0;
+  background: #323125;
+  color: #98969c;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  header .container {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  header .info {
+    width: 60%;
+    align-self: center;
+  }
+
+  header .pic {
+    width: 40%;
+  }
+
+  .type .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .type section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .type section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .type .pic {
+    width: 50%;
+  }
+
+  .type .info {
+    width: calc(50% - 32px);
+  }
+
+  .members ul {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .members li {
+    width: 250px;
+  }
+}
